@@ -1,0 +1,73 @@
+{
+  "disclaimer": "설명용 가상 입력. 실측·견적·감축 성과가 아님.",
+  "demand_pallets": 1000,
+  "deadline_hours": 8,
+  "budget_kg": 10000,
+  "used_kg": 8200,
+  "CUR_percent": 82,
+  "plans": [
+    {
+      "id": "A",
+      "cost": 100,
+      "emission": 400,
+      "hours": 6
+    },
+    {
+      "id": "B",
+      "cost": 110,
+      "emission": 260,
+      "hours": 4
+    },
+    {
+      "id": "C",
+      "cost": 140,
+      "emission": 200,
+      "hours": 3
+    }
+  ],
+  "normalized_scores": [
+    [
+      1.0,
+      0.0,
+      0.25
+    ],
+    [
+      0.75,
+      0.7,
+      0.5
+    ],
+    [
+      0.0,
+      1.0,
+      0.625
+    ]
+  ],
+  "RPS": {
+    "Cost": [
+      0.75,
+      0.695,
+      0.225
+    ],
+    "Balanced": [
+      0.55,
+      0.6849999999999999,
+      0.425
+    ],
+    "Carbon": [
+      0.25,
+      0.6699999999999999,
+      0.725
+    ],
+    "Emergency": [
+      0.125,
+      0.6849999999999999,
+      0.8625
+    ]
+  },
+  "winners": {
+    "Cost": "A",
+    "Balanced": "B",
+    "Carbon": "C",
+    "Emergency": "C"
+  }
+}

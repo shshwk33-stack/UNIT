@@ -1,0 +1,4 @@
+﻿plan,cost_만원,emission_kgCO2e,arrival_hours,cost_score,carbon_score,time_slack_score,Cost_RPS,Balanced_RPS,Carbon_RPS,Emergency_RPS
+A,100,400,6,1.0,0.0,0.25,0.75,0.55,0.25,0.125
+B,110,260,4,0.75,0.7,0.5,0.695,0.6849999999999999,0.6699999999999999,0.6849999999999999
+C,140,200,3,0.0,1.0,0.625,0.225,0.425,0.725,0.8625
