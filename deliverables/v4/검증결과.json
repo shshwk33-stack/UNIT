@@ -1,0 +1,19 @@
+{
+  "model_checks": 1039,
+  "browser_scenarios": 7,
+  "ui_transitions": 2,
+  "slides": {
+    "main": 5,
+    "banner": 4,
+    "research": 6,
+    "full": 11
+  },
+  "exact_banner_excerpt": "main pages 2–5",
+  "visual_review": "rendered main and research pages inspected",
+  "limitations": [
+    "synthetic inputs",
+    "no field efficacy evaluation",
+    "external literature blocked by network",
+    "presentation timing requires speaker rehearsal"
+  ]
+}

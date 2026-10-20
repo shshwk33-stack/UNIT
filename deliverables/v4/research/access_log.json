@@ -1,0 +1,32 @@
+[
+  {
+    "source": "crossref",
+    "url": "https://api.crossref.org/works?query=pallet%20pooling%20carbon%20optimization&rows=8",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "source": "openalex",
+    "url": "https://api.openalex.org/works?search=pallet%20pooling%20carbon&per-page=8",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "source": "kpca",
+    "url": "https://www.kopal.or.kr",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "source": "smartfreight",
+    "url": "https://www.smartfreightcentre.org/en/our-programs/global-logistics-emissions-council/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "source": "iso",
+    "url": "https://www.iso.org/standard/78864.html",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "source": "google",
+    "url": "https://www.google.com/search?q=%22pallet+pooling%22+%22carbon%22",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  }
+]
