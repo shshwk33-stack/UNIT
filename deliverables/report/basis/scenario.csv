@@ -1,0 +1,4 @@
+﻿plan,cost_10kKRW,emission_kgCO2e,hours,cost_score,carbon_score,slack_score,carbon_mode_RPS
+A,100,400,6,1.0,0.0,0.25,0.25
+B,110,260,4,0.75,0.7,0.5,0.67
+C,140,200,3,0.0,1.0,0.625,0.725

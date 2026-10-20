@@ -1,0 +1,635 @@
+{
+  "disclaimer": "Synthetic one-decision examples, not field results.",
+  "inputs": [
+    {
+      "id": "A",
+      "cost": 100,
+      "emission": 400,
+      "arrival": 6,
+      "supply": 1000,
+      "capacity": 1000,
+      "compatible": true,
+      "load_safe": true
+    },
+    {
+      "id": "B",
+      "cost": 110,
+      "emission": 260,
+      "arrival": 4,
+      "supply": 1000,
+      "capacity": 1000,
+      "compatible": true,
+      "load_safe": true
+    },
+    {
+      "id": "C",
+      "cost": 140,
+      "emission": 200,
+      "arrival": 3,
+      "supply": 1000,
+      "capacity": 1000,
+      "compatible": true,
+      "load_safe": true
+    }
+  ],
+  "base_state": {
+    "budget": 10000,
+    "used": 8200,
+    "committed": 0,
+    "demand": 1000,
+    "deadline": 8,
+    "cost_limit": 140
+  },
+  "base": {
+    "policy": "CBP",
+    "CUR": 82.0,
+    "mode": "Carbon",
+    "weights": [
+      0.2,
+      0.6,
+      0.2
+    ],
+    "remaining": 1800,
+    "excluded": {},
+    "scores": {
+      "A": {
+        "utility": [
+          1.0,
+          0.0,
+          0.25
+        ],
+        "RPS": 0.25
+      },
+      "B": {
+        "utility": [
+          0.75,
+          0.7,
+          0.5
+        ],
+        "RPS": 0.67
+      },
+      "C": {
+        "utility": [
+          0.0,
+          1.0,
+          0.625
+        ],
+        "RPS": 0.725
+      }
+    },
+    "selected": "C",
+    "status": "recommendation"
+  },
+  "by_state": {
+    "50": {
+      "CBP": {
+        "policy": "CBP",
+        "CUR": 50.0,
+        "mode": "Cost",
+        "weights": [
+          0.7,
+          0.1,
+          0.2
+        ],
+        "remaining": 5000,
+        "excluded": {},
+        "scores": {
+          "A": {
+            "utility": [
+              1.0,
+              0.0,
+              0.25
+            ],
+            "RPS": 0.75
+          },
+          "B": {
+            "utility": [
+              0.75,
+              0.7,
+              0.5
+            ],
+            "RPS": 0.695
+          },
+          "C": {
+            "utility": [
+              0.0,
+              1.0,
+              0.625
+            ],
+            "RPS": 0.225
+          }
+        },
+        "selected": "A",
+        "status": "recommendation"
+      },
+      "Fixed": {
+        "policy": "Fixed",
+        "CUR": 50.0,
+        "mode": "Cost",
+        "weights": [
+          0.5,
+          0.3,
+          0.2
+        ],
+        "remaining": 5000,
+        "excluded": {},
+        "scores": {
+          "A": {
+            "utility": [
+              1.0,
+              0.0,
+              0.25
+            ],
+            "RPS": 0.55
+          },
+          "B": {
+            "utility": [
+              0.75,
+              0.7,
+              0.5
+            ],
+            "RPS": 0.685
+          },
+          "C": {
+            "utility": [
+              0.0,
+              1.0,
+              0.625
+            ],
+            "RPS": 0.425
+          }
+        },
+        "selected": "B",
+        "status": "recommendation"
+      },
+      "CostOnly": {
+        "policy": "CostOnly",
+        "CUR": 50.0,
+        "mode": "Cost",
+        "weights": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "remaining": 5000,
+        "excluded": {},
+        "scores": {
+          "A": {
+            "utility": [
+              1.0,
+              0.0,
+              0.25
+            ],
+            "RPS": 1.0
+          },
+          "B": {
+            "utility": [
+              0.75,
+              0.7,
+              0.5
+            ],
+            "RPS": 0.75
+          },
+          "C": {
+            "utility": [
+              0.0,
+              1.0,
+              0.625
+            ],
+            "RPS": 0.0
+          }
+        },
+        "selected": "A",
+        "status": "recommendation"
+      }
+    },
+    "68": {
+      "CBP": {
+        "policy": "CBP",
+        "CUR": 68.0,
+        "mode": "Balanced",
+        "weights": [
+          0.5,
+          0.3,
+          0.2
+        ],
+        "remaining": 3200,
+        "excluded": {},
+        "scores": {
+          "A": {
+            "utility": [
+              1.0,
+              0.0,
+              0.25
+            ],
+            "RPS": 0.55
+          },
+          "B": {
+            "utility": [
+              0.75,
+              0.7,
+              0.5
+            ],
+            "RPS": 0.685
+          },
+          "C": {
+            "utility": [
+              0.0,
+              1.0,
+              0.625
+            ],
+            "RPS": 0.425
+          }
+        },
+        "selected": "B",
+        "status": "recommendation"
+      },
+      "Fixed": {
+        "policy": "Fixed",
+        "CUR": 68.0,
+        "mode": "Balanced",
+        "weights": [
+          0.5,
+          0.3,
+          0.2
+        ],
+        "remaining": 3200,
+        "excluded": {},
+        "scores": {
+          "A": {
+            "utility": [
+              1.0,
+              0.0,
+              0.25
+            ],
+            "RPS": 0.55
+          },
+          "B": {
+            "utility": [
+              0.75,
+              0.7,
+              0.5
+            ],
+            "RPS": 0.685
+          },
+          "C": {
+            "utility": [
+              0.0,
+              1.0,
+              0.625
+            ],
+            "RPS": 0.425
+          }
+        },
+        "selected": "B",
+        "status": "recommendation"
+      },
+      "CostOnly": {
+        "policy": "CostOnly",
+        "CUR": 68.0,
+        "mode": "Balanced",
+        "weights": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "remaining": 3200,
+        "excluded": {},
+        "scores": {
+          "A": {
+            "utility": [
+              1.0,
+              0.0,
+              0.25
+            ],
+            "RPS": 1.0
+          },
+          "B": {
+            "utility": [
+              0.75,
+              0.7,
+              0.5
+            ],
+            "RPS": 0.75
+          },
+          "C": {
+            "utility": [
+              0.0,
+              1.0,
+              0.625
+            ],
+            "RPS": 0.0
+          }
+        },
+        "selected": "A",
+        "status": "recommendation"
+      }
+    },
+    "82": {
+      "CBP": {
+        "policy": "CBP",
+        "CUR": 82.0,
+        "mode": "Carbon",
+        "weights": [
+          0.2,
+          0.6,
+          0.2
+        ],
+        "remaining": 1800,
+        "excluded": {},
+        "scores": {
+          "A": {
+            "utility": [
+              1.0,
+              0.0,
+              0.25
+            ],
+            "RPS": 0.25
+          },
+          "B": {
+            "utility": [
+              0.75,
+              0.7,
+              0.5
+            ],
+            "RPS": 0.67
+          },
+          "C": {
+            "utility": [
+              0.0,
+              1.0,
+              0.625
+            ],
+            "RPS": 0.725
+          }
+        },
+        "selected": "C",
+        "status": "recommendation"
+      },
+      "Fixed": {
+        "policy": "Fixed",
+        "CUR": 82.0,
+        "mode": "Carbon",
+        "weights": [
+          0.5,
+          0.3,
+          0.2
+        ],
+        "remaining": 1800,
+        "excluded": {},
+        "scores": {
+          "A": {
+            "utility": [
+              1.0,
+              0.0,
+              0.25
+            ],
+            "RPS": 0.55
+          },
+          "B": {
+            "utility": [
+              0.75,
+              0.7,
+              0.5
+            ],
+            "RPS": 0.685
+          },
+          "C": {
+            "utility": [
+              0.0,
+              1.0,
+              0.625
+            ],
+            "RPS": 0.425
+          }
+        },
+        "selected": "B",
+        "status": "recommendation"
+      },
+      "CostOnly": {
+        "policy": "CostOnly",
+        "CUR": 82.0,
+        "mode": "Carbon",
+        "weights": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "remaining": 1800,
+        "excluded": {},
+        "scores": {
+          "A": {
+            "utility": [
+              1.0,
+              0.0,
+              0.25
+            ],
+            "RPS": 1.0
+          },
+          "B": {
+            "utility": [
+              0.75,
+              0.7,
+              0.5
+            ],
+            "RPS": 0.75
+          },
+          "C": {
+            "utility": [
+              0.0,
+              1.0,
+              0.625
+            ],
+            "RPS": 0.0
+          }
+        },
+        "selected": "A",
+        "status": "recommendation"
+      }
+    },
+    "93": {
+      "CBP": {
+        "policy": "CBP",
+        "CUR": 93.0,
+        "mode": "Emergency",
+        "weights": [
+          0.1,
+          0.8,
+          0.1
+        ],
+        "remaining": 700,
+        "excluded": {},
+        "scores": {
+          "A": {
+            "utility": [
+              1.0,
+              0.0,
+              0.25
+            ],
+            "RPS": 0.125
+          },
+          "B": {
+            "utility": [
+              0.75,
+              0.7,
+              0.5
+            ],
+            "RPS": 0.6849999999999999
+          },
+          "C": {
+            "utility": [
+              0.0,
+              1.0,
+              0.625
+            ],
+            "RPS": 0.8625
+          }
+        },
+        "selected": "C",
+        "status": "recommendation"
+      },
+      "Fixed": {
+        "policy": "Fixed",
+        "CUR": 93.0,
+        "mode": "Emergency",
+        "weights": [
+          0.5,
+          0.3,
+          0.2
+        ],
+        "remaining": 700,
+        "excluded": {},
+        "scores": {
+          "A": {
+            "utility": [
+              1.0,
+              0.0,
+              0.25
+            ],
+            "RPS": 0.55
+          },
+          "B": {
+            "utility": [
+              0.75,
+              0.7,
+              0.5
+            ],
+            "RPS": 0.685
+          },
+          "C": {
+            "utility": [
+              0.0,
+              1.0,
+              0.625
+            ],
+            "RPS": 0.425
+          }
+        },
+        "selected": "B",
+        "status": "recommendation"
+      },
+      "CostOnly": {
+        "policy": "CostOnly",
+        "CUR": 93.0,
+        "mode": "Emergency",
+        "weights": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "remaining": 700,
+        "excluded": {},
+        "scores": {
+          "A": {
+            "utility": [
+              1.0,
+              0.0,
+              0.25
+            ],
+            "RPS": 1.0
+          },
+          "B": {
+            "utility": [
+              0.75,
+              0.7,
+              0.5
+            ],
+            "RPS": 0.75
+          },
+          "C": {
+            "utility": [
+              0.0,
+              1.0,
+              0.625
+            ],
+            "RPS": 0.0
+          }
+        },
+        "selected": "A",
+        "status": "recommendation"
+      }
+    }
+  },
+  "cost_limit_120": {
+    "policy": "CBP",
+    "CUR": 82.0,
+    "mode": "Carbon",
+    "weights": [
+      0.2,
+      0.6,
+      0.2
+    ],
+    "remaining": 1800,
+    "excluded": {
+      "C": [
+        "cost_limit"
+      ]
+    },
+    "scores": {
+      "A": {
+        "utility": [
+          1.0,
+          0.0,
+          0.25
+        ],
+        "RPS": 0.25
+      },
+      "B": {
+        "utility": [
+          0.0,
+          1.0,
+          0.5
+        ],
+        "RPS": 0.7
+      }
+    },
+    "selected": "B",
+    "status": "recommendation"
+  },
+  "no_feasible": {
+    "policy": "CBP",
+    "CUR": 99.0,
+    "mode": "Emergency",
+    "weights": [
+      0.1,
+      0.8,
+      0.1
+    ],
+    "remaining": 100,
+    "excluded": {
+      "A": [
+        "carbon_limit"
+      ],
+      "B": [
+        "carbon_limit"
+      ],
+      "C": [
+        "carbon_limit"
+      ]
+    },
+    "scores": {},
+    "selected": null,
+    "status": "exception_required"
+  },
+  "checks_passed": 1039
+}

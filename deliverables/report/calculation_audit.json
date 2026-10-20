@@ -1,0 +1,35 @@
+{
+  "based_on": "CBP V4",
+  "model_sha256": "917d73b57889597b5c3a037aae9db4dc1c8bc2f4dcb724835b1d63af3a1c73cc",
+  "model_checks": 1039,
+  "independent_fraction_score_checks": 12,
+  "rps_by_mode": [
+    [
+      0.75,
+      0.695,
+      0.225
+    ],
+    [
+      0.55,
+      0.685,
+      0.425
+    ],
+    [
+      0.25,
+      0.67,
+      0.725
+    ],
+    [
+      0.125,
+      0.685,
+      0.8625
+    ]
+  ],
+  "cost_limit_120_B_RPS": 0.7,
+  "incremental_cost_A_to_C_KRW_per_t": 2000000,
+  "incremental_cost_B_to_C_KRW_per_t": 5000000,
+  "sensitivity_thresholds": [
+    "53/210",
+    "61/95"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "pages": 27,
+  "independent_RPS_checks": 12,
+  "model_condition_checks": 1039,
+  "toc_links_verified": 25,
+  "font_records_embedded_with_unicode": 179,
+  "layout_overflow": 0,
+  "pdf_page_title_checks": 27,
+  "pdf_sha256": "25949bd88265d765f2719dc7869c7dfb1820c1650b5249a5ad763e9e94508811",
+  "model_sha256": "917d73b57889597b5c3a037aae9db4dc1c8bc2f4dcb724835b1d63af3a1c73cc",
+  "visual_review": "27 rendered pages inspected; source-table wrapping and chart legend corrected",
+  "limits": "Synthetic cases; no field efficacy or novelty proof."
+}
