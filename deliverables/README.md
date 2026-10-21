@@ -1,6 +1,21 @@
 # CBP 본선 발표 검토안
 
-## 아이디어 상세보고서 PDF
+## 최신 최종본 · 2026.10.21
+
+**다음 운송까지 보는 파렛트 탄소예산.** 남은 공급 예상 배출과 오차 여유를 반영해, 현재 허용 후보 중 최소비용 운송을 추천하는 방식으로 개정했습니다.
+
+- [최종 연구보고서 PDF · 27쪽](final/cbp-final-report.pdf)
+- [4분 본발표 PPT · 5장](final/cbp-final-main.pptx)
+- [통합 PPT · 본발표 5장 + 질의응답 8장](final/cbp-final-full.pptx)
+- [배너 PPT · 본발표 2~5장 그대로 발췌](final/cbp-final-banner.pptx)
+- [전체 자료 ZIP](final/cbp-final-package.zip)
+- [파일 안내·대본·데모·검수 결과](final/README.md)
+
+문헌 확인 범위와 내부 관리 목표의 의미를 명시했습니다. 예시는 합성 입력이며 현장 성과를 주장하지 않습니다. 아래 이전 버전과 추천 규칙·숫자를 혼용하지 마세요.
+
+![최종 본발표 미리보기](final/preview.jpg)
+
+## 이전: V4 아이디어 상세보고서 PDF
 
 - [27쪽 보고서 PDF](report/cbp-idea-report.pdf)
 - [보고서 다운로드](https://github.com/shshwk33-stack/UNIT/raw/refs/heads/cbp-final-review-20261019/deliverables/report/cbp-idea-report.pdf)
@@ -8,7 +23,7 @@
 
 V4 기준으로 문제 정의, 전체 수식과 계산, 예외 처리, 구현, 실증 계획, 한계와 질의응답을 정리했습니다.
 
-## 최신: V4 피드백 반영·추천 프로토타입
+## 이전: V4 피드백 반영·추천 프로토타입
 
 **탄소예산이 바꾸는 파렛트 재배치.** 본문을 5장으로 압축하고, 비용 한도·실행 가능 후보 검사·동작 데모를 추가했습니다. 큰 숫자와 운영 도식, 정책별 선택 비교를 중심으로 다시 디자인했습니다.
 

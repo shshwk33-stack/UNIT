@@ -1,0 +1,110 @@
+{
+  "date": "2026-10-21",
+  "requests": [
+    {
+      "id": "crossref",
+      "url": "https://api.crossref.org/works?query=pallet+pooling+repositioning+carbon+emissions+optimization&rows=5",
+      "status": 200,
+      "bytes": 30715,
+      "final_url": "https://api.crossref.org/works?query=pallet+pooling+repositioning+carbon+emissions+optimization&rows=5"
+    },
+    {
+      "id": "glec",
+      "url": "https://www.smartfreightcentre.org/en/our-programs/global-logistics-emissions-council/calculate-report-glec-framework/",
+      "status": 200,
+      "bytes": 273132,
+      "final_url": "https://smartfreightcentre.org/"
+    },
+    {
+      "id": "iso",
+      "url": "https://www.iso.org/standard/78864.html",
+      "status": 200,
+      "bytes": 90163,
+      "final_url": "https://www.iso.org/standard/78864.html"
+    },
+    {
+      "id": "logisall",
+      "url": "https://www.logisall.com/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "id": "kpca",
+      "url": "https://www.kopal.or.kr/",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "ghg",
+      "url": "https://ghgprotocol.org/scope-3-calculation-guidance-2",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "id": "ipcc",
+      "url": "https://www.ipcc.ch/report/ar6/syr/summary-for-policymakers/",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "id": "openalex_tornese",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.jclepro.2017.10.054",
+      "final_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.jclepro.2017.10.054",
+      "status": 200,
+      "bytes": 15575
+    },
+    {
+      "id": "semantic_tornese",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1016/j.jclepro.2017.10.054?fields=title,abstract,year,authors,openAccessPdf",
+      "final_url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1016/j.jclepro.2017.10.054?fields=title,abstract,year,authors,openAccessPdf",
+      "status": 200,
+      "bytes": 1003
+    },
+    {
+      "id": "crossref_carbon",
+      "url": "https://api.crossref.org/works?query.title=The+carbon-constrained+EOQ&rows=3",
+      "final_url": "https://api.crossref.org/works?query.title=The+carbon-constrained+EOQ&rows=3",
+      "status": 200,
+      "bytes": 37447
+    },
+    {
+      "id": "crossref_pollution",
+      "url": "https://api.crossref.org/works?query.title=The+pollution-routing+problem&rows=2",
+      "final_url": "https://api.crossref.org/works?query.title=The+pollution-routing+problem&rows=2",
+      "status": 200,
+      "bytes": 29213
+    },
+    {
+      "id": "sfc_account",
+      "url": "https://smartfreightcentre.org/en/our-programs/emissions-accounting/",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "sfc_library",
+      "url": "https://smartfreightcentre.org/en/about-sfc/news/a-new-era-for-logistics-emissions-accounting-glec-framework-v3-and-iso-14083/",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "sfc_current",
+      "url": "https://smartfreightcentre.org/page/emissions-accounting",
+      "final_url": "https://smartfreightcentre.org/page/emissions-accounting",
+      "status": 200,
+      "bytes": 81629
+    },
+    {
+      "id": "openalex_eoq",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.orl.2012.12.003",
+      "final_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.orl.2012.12.003",
+      "status": 200,
+      "bytes": 14753
+    },
+    {
+      "id": "openalex_prp",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.trb.2011.02.004",
+      "final_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.trb.2011.02.004",
+      "status": 200,
+      "bytes": 15930
+    },
+    {
+      "id": "doi_tornese",
+      "url": "https://doi.org/10.1016/j.jclepro.2017.10.054",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    }
+  ]
+}

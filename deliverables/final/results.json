@@ -1,0 +1,1684 @@
+{
+  "units": {
+    "cost": "10,000 KRW",
+    "emission": "kgCO2e",
+    "arrival": "h"
+  },
+  "plans": [
+    {
+      "id": "A",
+      "cost": 100,
+      "emission": 100,
+      "arrival": 4,
+      "quantity": 1000,
+      "capacity": 1000,
+      "compatible": true,
+      "safe": true,
+      "confirmed": true
+    },
+    {
+      "id": "B",
+      "cost": 108,
+      "emission": 60,
+      "arrival": 6,
+      "quantity": 1000,
+      "capacity": 1000,
+      "compatible": true,
+      "safe": true,
+      "confirmed": true
+    },
+    {
+      "id": "C",
+      "cost": 115,
+      "emission": 30,
+      "arrival": 7,
+      "quantity": 1000,
+      "capacity": 1000,
+      "compatible": true,
+      "safe": true,
+      "confirmed": true
+    }
+  ],
+  "base": {
+    "state": {
+      "budget": 1000,
+      "actual": 700,
+      "committed": 0,
+      "future": 200,
+      "buffer": 20,
+      "cost_limit": 120,
+      "deadline": 8,
+      "demand": 1000
+    },
+    "cur": 70.0,
+    "headroom": 80,
+    "excluded": [],
+    "selected": "B",
+    "suggested": "B",
+    "baseline": "A",
+    "status": "adjust",
+    "requires_approval": false,
+    "projected": 960,
+    "projected_with_buffer": 980,
+    "gap": 0,
+    "delta_cost": 8,
+    "delta_emission": -40
+  },
+  "early": {
+    "state": {
+      "budget": 1000,
+      "actual": 800,
+      "committed": 0,
+      "future": 150,
+      "buffer": 20,
+      "cost_limit": 120,
+      "deadline": 8,
+      "demand": 1000
+    },
+    "cur": 80.0,
+    "headroom": 30,
+    "excluded": [],
+    "selected": "C",
+    "suggested": "C",
+    "baseline": "A",
+    "status": "adjust",
+    "requires_approval": false,
+    "projected": 980,
+    "projected_with_buffer": 1000,
+    "gap": 0,
+    "delta_cost": 15,
+    "delta_emission": -70
+  },
+  "late": {
+    "state": {
+      "budget": 1000,
+      "actual": 800,
+      "committed": 0,
+      "future": 20,
+      "buffer": 20,
+      "cost_limit": 120,
+      "deadline": 8,
+      "demand": 1000
+    },
+    "cur": 80.0,
+    "headroom": 160,
+    "excluded": [],
+    "selected": "A",
+    "suggested": "A",
+    "baseline": "A",
+    "status": "normal",
+    "requires_approval": false,
+    "projected": 920,
+    "projected_with_buffer": 940,
+    "gap": 0,
+    "delta_cost": 0,
+    "delta_emission": 0
+  },
+  "exception": {
+    "state": {
+      "budget": 1000,
+      "actual": 760,
+      "committed": 0,
+      "future": 200,
+      "buffer": 20,
+      "cost_limit": 120,
+      "deadline": 8,
+      "demand": 1000
+    },
+    "cur": 76.0,
+    "headroom": 20,
+    "excluded": [],
+    "selected": null,
+    "suggested": "C",
+    "baseline": "A",
+    "status": "carbon_exception",
+    "requires_approval": true,
+    "projected": 990,
+    "projected_with_buffer": 1010,
+    "gap": 10,
+    "delta_cost": 15,
+    "delta_emission": -70
+  },
+  "replays": [
+    {
+      "policy": "cost",
+      "actual_factor": 1,
+      "cost": 2000,
+      "emission": 2000,
+      "overrun": 800,
+      "fulfilled": 20,
+      "exceptions": 0,
+      "trace": [
+        {
+          "step": 1,
+          "selected": "A",
+          "cost": 100,
+          "actual": 100,
+          "headroom": 1200,
+          "exception": false
+        },
+        {
+          "step": 2,
+          "selected": "A",
+          "cost": 200,
+          "actual": 200,
+          "headroom": 1100,
+          "exception": false
+        },
+        {
+          "step": 3,
+          "selected": "A",
+          "cost": 300,
+          "actual": 300,
+          "headroom": 1000,
+          "exception": false
+        },
+        {
+          "step": 4,
+          "selected": "A",
+          "cost": 400,
+          "actual": 400,
+          "headroom": 900,
+          "exception": false
+        },
+        {
+          "step": 5,
+          "selected": "A",
+          "cost": 500,
+          "actual": 500,
+          "headroom": 800,
+          "exception": false
+        },
+        {
+          "step": 6,
+          "selected": "A",
+          "cost": 600,
+          "actual": 600,
+          "headroom": 700,
+          "exception": false
+        },
+        {
+          "step": 7,
+          "selected": "A",
+          "cost": 700,
+          "actual": 700,
+          "headroom": 600,
+          "exception": false
+        },
+        {
+          "step": 8,
+          "selected": "A",
+          "cost": 800,
+          "actual": 800,
+          "headroom": 500,
+          "exception": false
+        },
+        {
+          "step": 9,
+          "selected": "A",
+          "cost": 900,
+          "actual": 900,
+          "headroom": 400,
+          "exception": false
+        },
+        {
+          "step": 10,
+          "selected": "A",
+          "cost": 1000,
+          "actual": 1000,
+          "headroom": 300,
+          "exception": false
+        },
+        {
+          "step": 11,
+          "selected": "A",
+          "cost": 1100,
+          "actual": 1100,
+          "headroom": 200,
+          "exception": false
+        },
+        {
+          "step": 12,
+          "selected": "A",
+          "cost": 1200,
+          "actual": 1200,
+          "headroom": 100,
+          "exception": false
+        },
+        {
+          "step": 13,
+          "selected": "A",
+          "cost": 1300,
+          "actual": 1300,
+          "headroom": 0,
+          "exception": false
+        },
+        {
+          "step": 14,
+          "selected": "A",
+          "cost": 1400,
+          "actual": 1400,
+          "headroom": -100,
+          "exception": false
+        },
+        {
+          "step": 15,
+          "selected": "A",
+          "cost": 1500,
+          "actual": 1500,
+          "headroom": -200,
+          "exception": false
+        },
+        {
+          "step": 16,
+          "selected": "A",
+          "cost": 1600,
+          "actual": 1600,
+          "headroom": -300,
+          "exception": false
+        },
+        {
+          "step": 17,
+          "selected": "A",
+          "cost": 1700,
+          "actual": 1700,
+          "headroom": -400,
+          "exception": false
+        },
+        {
+          "step": 18,
+          "selected": "A",
+          "cost": 1800,
+          "actual": 1800,
+          "headroom": -500,
+          "exception": false
+        },
+        {
+          "step": 19,
+          "selected": "A",
+          "cost": 1900,
+          "actual": 1900,
+          "headroom": -600,
+          "exception": false
+        },
+        {
+          "step": 20,
+          "selected": "A",
+          "cost": 2000,
+          "actual": 2000,
+          "headroom": -700,
+          "exception": false
+        }
+      ]
+    },
+    {
+      "policy": "current",
+      "actual_factor": 1,
+      "cost": 2120,
+      "emission": 1440,
+      "overrun": 240,
+      "fulfilled": 20,
+      "exceptions": 8,
+      "trace": [
+        {
+          "step": 1,
+          "selected": "A",
+          "cost": 100,
+          "actual": 100,
+          "headroom": 1200,
+          "exception": false
+        },
+        {
+          "step": 2,
+          "selected": "A",
+          "cost": 200,
+          "actual": 200,
+          "headroom": 1100,
+          "exception": false
+        },
+        {
+          "step": 3,
+          "selected": "A",
+          "cost": 300,
+          "actual": 300,
+          "headroom": 1000,
+          "exception": false
+        },
+        {
+          "step": 4,
+          "selected": "A",
+          "cost": 400,
+          "actual": 400,
+          "headroom": 900,
+          "exception": false
+        },
+        {
+          "step": 5,
+          "selected": "A",
+          "cost": 500,
+          "actual": 500,
+          "headroom": 800,
+          "exception": false
+        },
+        {
+          "step": 6,
+          "selected": "A",
+          "cost": 600,
+          "actual": 600,
+          "headroom": 700,
+          "exception": false
+        },
+        {
+          "step": 7,
+          "selected": "A",
+          "cost": 700,
+          "actual": 700,
+          "headroom": 600,
+          "exception": false
+        },
+        {
+          "step": 8,
+          "selected": "A",
+          "cost": 800,
+          "actual": 800,
+          "headroom": 500,
+          "exception": false
+        },
+        {
+          "step": 9,
+          "selected": "A",
+          "cost": 900,
+          "actual": 900,
+          "headroom": 400,
+          "exception": false
+        },
+        {
+          "step": 10,
+          "selected": "A",
+          "cost": 1000,
+          "actual": 1000,
+          "headroom": 300,
+          "exception": false
+        },
+        {
+          "step": 11,
+          "selected": "A",
+          "cost": 1100,
+          "actual": 1100,
+          "headroom": 200,
+          "exception": false
+        },
+        {
+          "step": 12,
+          "selected": "A",
+          "cost": 1200,
+          "actual": 1200,
+          "headroom": 100,
+          "exception": false
+        },
+        {
+          "step": 13,
+          "selected": "C",
+          "cost": 1315,
+          "actual": 1230,
+          "headroom": 0,
+          "exception": true
+        },
+        {
+          "step": 14,
+          "selected": "C",
+          "cost": 1430,
+          "actual": 1260,
+          "headroom": -30,
+          "exception": true
+        },
+        {
+          "step": 15,
+          "selected": "C",
+          "cost": 1545,
+          "actual": 1290,
+          "headroom": -60,
+          "exception": true
+        },
+        {
+          "step": 16,
+          "selected": "C",
+          "cost": 1660,
+          "actual": 1320,
+          "headroom": -90,
+          "exception": true
+        },
+        {
+          "step": 17,
+          "selected": "C",
+          "cost": 1775,
+          "actual": 1350,
+          "headroom": -120,
+          "exception": true
+        },
+        {
+          "step": 18,
+          "selected": "C",
+          "cost": 1890,
+          "actual": 1380,
+          "headroom": -150,
+          "exception": true
+        },
+        {
+          "step": 19,
+          "selected": "C",
+          "cost": 2005,
+          "actual": 1410,
+          "headroom": -180,
+          "exception": true
+        },
+        {
+          "step": 20,
+          "selected": "C",
+          "cost": 2120,
+          "actual": 1440,
+          "headroom": -210,
+          "exception": true
+        }
+      ]
+    },
+    {
+      "policy": "forecast",
+      "actual_factor": 1,
+      "cost": 2167,
+      "emission": 1170,
+      "overrun": 0,
+      "fulfilled": 20,
+      "exceptions": 0,
+      "trace": [
+        {
+          "step": 1,
+          "selected": "C",
+          "cost": 115,
+          "actual": 30,
+          "headroom": 40,
+          "exception": false
+        },
+        {
+          "step": 2,
+          "selected": "B",
+          "cost": 223,
+          "actual": 90,
+          "headroom": 70,
+          "exception": false
+        },
+        {
+          "step": 3,
+          "selected": "B",
+          "cost": 331,
+          "actual": 150,
+          "headroom": 70,
+          "exception": false
+        },
+        {
+          "step": 4,
+          "selected": "B",
+          "cost": 439,
+          "actual": 210,
+          "headroom": 70,
+          "exception": false
+        },
+        {
+          "step": 5,
+          "selected": "B",
+          "cost": 547,
+          "actual": 270,
+          "headroom": 70,
+          "exception": false
+        },
+        {
+          "step": 6,
+          "selected": "B",
+          "cost": 655,
+          "actual": 330,
+          "headroom": 70,
+          "exception": false
+        },
+        {
+          "step": 7,
+          "selected": "B",
+          "cost": 763,
+          "actual": 390,
+          "headroom": 70,
+          "exception": false
+        },
+        {
+          "step": 8,
+          "selected": "B",
+          "cost": 871,
+          "actual": 450,
+          "headroom": 70,
+          "exception": false
+        },
+        {
+          "step": 9,
+          "selected": "B",
+          "cost": 979,
+          "actual": 510,
+          "headroom": 70,
+          "exception": false
+        },
+        {
+          "step": 10,
+          "selected": "B",
+          "cost": 1087,
+          "actual": 570,
+          "headroom": 70,
+          "exception": false
+        },
+        {
+          "step": 11,
+          "selected": "B",
+          "cost": 1195,
+          "actual": 630,
+          "headroom": 70,
+          "exception": false
+        },
+        {
+          "step": 12,
+          "selected": "B",
+          "cost": 1303,
+          "actual": 690,
+          "headroom": 70,
+          "exception": false
+        },
+        {
+          "step": 13,
+          "selected": "B",
+          "cost": 1411,
+          "actual": 750,
+          "headroom": 70,
+          "exception": false
+        },
+        {
+          "step": 14,
+          "selected": "B",
+          "cost": 1519,
+          "actual": 810,
+          "headroom": 70,
+          "exception": false
+        },
+        {
+          "step": 15,
+          "selected": "B",
+          "cost": 1627,
+          "actual": 870,
+          "headroom": 70,
+          "exception": false
+        },
+        {
+          "step": 16,
+          "selected": "B",
+          "cost": 1735,
+          "actual": 930,
+          "headroom": 70,
+          "exception": false
+        },
+        {
+          "step": 17,
+          "selected": "B",
+          "cost": 1843,
+          "actual": 990,
+          "headroom": 70,
+          "exception": false
+        },
+        {
+          "step": 18,
+          "selected": "B",
+          "cost": 1951,
+          "actual": 1050,
+          "headroom": 70,
+          "exception": false
+        },
+        {
+          "step": 19,
+          "selected": "B",
+          "cost": 2059,
+          "actual": 1110,
+          "headroom": 70,
+          "exception": false
+        },
+        {
+          "step": 20,
+          "selected": "B",
+          "cost": 2167,
+          "actual": 1170,
+          "headroom": 90,
+          "exception": false
+        }
+      ]
+    },
+    {
+      "policy": "cost",
+      "actual_factor": 1.25,
+      "cost": 2000,
+      "emission": 2500.0,
+      "overrun": 1300.0,
+      "fulfilled": 20,
+      "exceptions": 0,
+      "trace": [
+        {
+          "step": 1,
+          "selected": "A",
+          "cost": 100,
+          "actual": 125.0,
+          "headroom": 1200,
+          "exception": false
+        },
+        {
+          "step": 2,
+          "selected": "A",
+          "cost": 200,
+          "actual": 250.0,
+          "headroom": 1075.0,
+          "exception": false
+        },
+        {
+          "step": 3,
+          "selected": "A",
+          "cost": 300,
+          "actual": 375.0,
+          "headroom": 950.0,
+          "exception": false
+        },
+        {
+          "step": 4,
+          "selected": "A",
+          "cost": 400,
+          "actual": 500.0,
+          "headroom": 825.0,
+          "exception": false
+        },
+        {
+          "step": 5,
+          "selected": "A",
+          "cost": 500,
+          "actual": 625.0,
+          "headroom": 700.0,
+          "exception": false
+        },
+        {
+          "step": 6,
+          "selected": "A",
+          "cost": 600,
+          "actual": 750.0,
+          "headroom": 575.0,
+          "exception": false
+        },
+        {
+          "step": 7,
+          "selected": "A",
+          "cost": 700,
+          "actual": 875.0,
+          "headroom": 450.0,
+          "exception": false
+        },
+        {
+          "step": 8,
+          "selected": "A",
+          "cost": 800,
+          "actual": 1000.0,
+          "headroom": 325.0,
+          "exception": false
+        },
+        {
+          "step": 9,
+          "selected": "A",
+          "cost": 900,
+          "actual": 1125.0,
+          "headroom": 200.0,
+          "exception": false
+        },
+        {
+          "step": 10,
+          "selected": "A",
+          "cost": 1000,
+          "actual": 1250.0,
+          "headroom": 75.0,
+          "exception": false
+        },
+        {
+          "step": 11,
+          "selected": "A",
+          "cost": 1100,
+          "actual": 1375.0,
+          "headroom": -50.0,
+          "exception": false
+        },
+        {
+          "step": 12,
+          "selected": "A",
+          "cost": 1200,
+          "actual": 1500.0,
+          "headroom": -175.0,
+          "exception": false
+        },
+        {
+          "step": 13,
+          "selected": "A",
+          "cost": 1300,
+          "actual": 1625.0,
+          "headroom": -300.0,
+          "exception": false
+        },
+        {
+          "step": 14,
+          "selected": "A",
+          "cost": 1400,
+          "actual": 1750.0,
+          "headroom": -425.0,
+          "exception": false
+        },
+        {
+          "step": 15,
+          "selected": "A",
+          "cost": 1500,
+          "actual": 1875.0,
+          "headroom": -550.0,
+          "exception": false
+        },
+        {
+          "step": 16,
+          "selected": "A",
+          "cost": 1600,
+          "actual": 2000.0,
+          "headroom": -675.0,
+          "exception": false
+        },
+        {
+          "step": 17,
+          "selected": "A",
+          "cost": 1700,
+          "actual": 2125.0,
+          "headroom": -800.0,
+          "exception": false
+        },
+        {
+          "step": 18,
+          "selected": "A",
+          "cost": 1800,
+          "actual": 2250.0,
+          "headroom": -925.0,
+          "exception": false
+        },
+        {
+          "step": 19,
+          "selected": "A",
+          "cost": 1900,
+          "actual": 2375.0,
+          "headroom": -1050.0,
+          "exception": false
+        },
+        {
+          "step": 20,
+          "selected": "A",
+          "cost": 2000,
+          "actual": 2500.0,
+          "headroom": -1175.0,
+          "exception": false
+        }
+      ]
+    },
+    {
+      "policy": "current",
+      "actual_factor": 1.25,
+      "cost": 2158,
+      "emission": 1575.0,
+      "overrun": 375.0,
+      "fulfilled": 20,
+      "exceptions": 10,
+      "trace": [
+        {
+          "step": 1,
+          "selected": "A",
+          "cost": 100,
+          "actual": 125.0,
+          "headroom": 1200,
+          "exception": false
+        },
+        {
+          "step": 2,
+          "selected": "A",
+          "cost": 200,
+          "actual": 250.0,
+          "headroom": 1075.0,
+          "exception": false
+        },
+        {
+          "step": 3,
+          "selected": "A",
+          "cost": 300,
+          "actual": 375.0,
+          "headroom": 950.0,
+          "exception": false
+        },
+        {
+          "step": 4,
+          "selected": "A",
+          "cost": 400,
+          "actual": 500.0,
+          "headroom": 825.0,
+          "exception": false
+        },
+        {
+          "step": 5,
+          "selected": "A",
+          "cost": 500,
+          "actual": 625.0,
+          "headroom": 700.0,
+          "exception": false
+        },
+        {
+          "step": 6,
+          "selected": "A",
+          "cost": 600,
+          "actual": 750.0,
+          "headroom": 575.0,
+          "exception": false
+        },
+        {
+          "step": 7,
+          "selected": "A",
+          "cost": 700,
+          "actual": 875.0,
+          "headroom": 450.0,
+          "exception": false
+        },
+        {
+          "step": 8,
+          "selected": "A",
+          "cost": 800,
+          "actual": 1000.0,
+          "headroom": 325.0,
+          "exception": false
+        },
+        {
+          "step": 9,
+          "selected": "A",
+          "cost": 900,
+          "actual": 1125.0,
+          "headroom": 200.0,
+          "exception": false
+        },
+        {
+          "step": 10,
+          "selected": "B",
+          "cost": 1008,
+          "actual": 1200.0,
+          "headroom": 75.0,
+          "exception": false
+        },
+        {
+          "step": 11,
+          "selected": "C",
+          "cost": 1123,
+          "actual": 1237.5,
+          "headroom": 0.0,
+          "exception": true
+        },
+        {
+          "step": 12,
+          "selected": "C",
+          "cost": 1238,
+          "actual": 1275.0,
+          "headroom": -37.5,
+          "exception": true
+        },
+        {
+          "step": 13,
+          "selected": "C",
+          "cost": 1353,
+          "actual": 1312.5,
+          "headroom": -75.0,
+          "exception": true
+        },
+        {
+          "step": 14,
+          "selected": "C",
+          "cost": 1468,
+          "actual": 1350.0,
+          "headroom": -112.5,
+          "exception": true
+        },
+        {
+          "step": 15,
+          "selected": "C",
+          "cost": 1583,
+          "actual": 1387.5,
+          "headroom": -150.0,
+          "exception": true
+        },
+        {
+          "step": 16,
+          "selected": "C",
+          "cost": 1698,
+          "actual": 1425.0,
+          "headroom": -187.5,
+          "exception": true
+        },
+        {
+          "step": 17,
+          "selected": "C",
+          "cost": 1813,
+          "actual": 1462.5,
+          "headroom": -225.0,
+          "exception": true
+        },
+        {
+          "step": 18,
+          "selected": "C",
+          "cost": 1928,
+          "actual": 1500.0,
+          "headroom": -262.5,
+          "exception": true
+        },
+        {
+          "step": 19,
+          "selected": "C",
+          "cost": 2043,
+          "actual": 1537.5,
+          "headroom": -300.0,
+          "exception": true
+        },
+        {
+          "step": 20,
+          "selected": "C",
+          "cost": 2158,
+          "actual": 1575.0,
+          "headroom": -337.5,
+          "exception": true
+        }
+      ]
+    },
+    {
+      "policy": "forecast",
+      "actual_factor": 1.25,
+      "cost": 2216,
+      "emission": 1200.0,
+      "overrun": 0,
+      "fulfilled": 20,
+      "exceptions": 0,
+      "trace": [
+        {
+          "step": 1,
+          "selected": "C",
+          "cost": 115,
+          "actual": 37.5,
+          "headroom": 40,
+          "exception": false
+        },
+        {
+          "step": 2,
+          "selected": "B",
+          "cost": 223,
+          "actual": 112.5,
+          "headroom": 62.5,
+          "exception": false
+        },
+        {
+          "step": 3,
+          "selected": "C",
+          "cost": 338,
+          "actual": 150.0,
+          "headroom": 47.5,
+          "exception": false
+        },
+        {
+          "step": 4,
+          "selected": "B",
+          "cost": 446,
+          "actual": 225.0,
+          "headroom": 70.0,
+          "exception": false
+        },
+        {
+          "step": 5,
+          "selected": "C",
+          "cost": 561,
+          "actual": 262.5,
+          "headroom": 55.0,
+          "exception": false
+        },
+        {
+          "step": 6,
+          "selected": "B",
+          "cost": 669,
+          "actual": 337.5,
+          "headroom": 77.5,
+          "exception": false
+        },
+        {
+          "step": 7,
+          "selected": "B",
+          "cost": 777,
+          "actual": 412.5,
+          "headroom": 62.5,
+          "exception": false
+        },
+        {
+          "step": 8,
+          "selected": "C",
+          "cost": 892,
+          "actual": 450.0,
+          "headroom": 47.5,
+          "exception": false
+        },
+        {
+          "step": 9,
+          "selected": "B",
+          "cost": 1000,
+          "actual": 525.0,
+          "headroom": 70.0,
+          "exception": false
+        },
+        {
+          "step": 10,
+          "selected": "C",
+          "cost": 1115,
+          "actual": 562.5,
+          "headroom": 55.0,
+          "exception": false
+        },
+        {
+          "step": 11,
+          "selected": "B",
+          "cost": 1223,
+          "actual": 637.5,
+          "headroom": 77.5,
+          "exception": false
+        },
+        {
+          "step": 12,
+          "selected": "B",
+          "cost": 1331,
+          "actual": 712.5,
+          "headroom": 62.5,
+          "exception": false
+        },
+        {
+          "step": 13,
+          "selected": "C",
+          "cost": 1446,
+          "actual": 750.0,
+          "headroom": 47.5,
+          "exception": false
+        },
+        {
+          "step": 14,
+          "selected": "B",
+          "cost": 1554,
+          "actual": 825.0,
+          "headroom": 70.0,
+          "exception": false
+        },
+        {
+          "step": 15,
+          "selected": "C",
+          "cost": 1669,
+          "actual": 862.5,
+          "headroom": 55.0,
+          "exception": false
+        },
+        {
+          "step": 16,
+          "selected": "B",
+          "cost": 1777,
+          "actual": 937.5,
+          "headroom": 77.5,
+          "exception": false
+        },
+        {
+          "step": 17,
+          "selected": "B",
+          "cost": 1885,
+          "actual": 1012.5,
+          "headroom": 62.5,
+          "exception": false
+        },
+        {
+          "step": 18,
+          "selected": "C",
+          "cost": 2000,
+          "actual": 1050.0,
+          "headroom": 47.5,
+          "exception": false
+        },
+        {
+          "step": 19,
+          "selected": "B",
+          "cost": 2108,
+          "actual": 1125.0,
+          "headroom": 70.0,
+          "exception": false
+        },
+        {
+          "step": 20,
+          "selected": "B",
+          "cost": 2216,
+          "actual": 1200.0,
+          "headroom": 75.0,
+          "exception": false
+        }
+      ]
+    },
+    {
+      "policy": "cost",
+      "actual_factor": 1.5,
+      "cost": 2000,
+      "emission": 3000.0,
+      "overrun": 1800.0,
+      "fulfilled": 20,
+      "exceptions": 0,
+      "trace": [
+        {
+          "step": 1,
+          "selected": "A",
+          "cost": 100,
+          "actual": 150.0,
+          "headroom": 1200,
+          "exception": false
+        },
+        {
+          "step": 2,
+          "selected": "A",
+          "cost": 200,
+          "actual": 300.0,
+          "headroom": 1050.0,
+          "exception": false
+        },
+        {
+          "step": 3,
+          "selected": "A",
+          "cost": 300,
+          "actual": 450.0,
+          "headroom": 900.0,
+          "exception": false
+        },
+        {
+          "step": 4,
+          "selected": "A",
+          "cost": 400,
+          "actual": 600.0,
+          "headroom": 750.0,
+          "exception": false
+        },
+        {
+          "step": 5,
+          "selected": "A",
+          "cost": 500,
+          "actual": 750.0,
+          "headroom": 600.0,
+          "exception": false
+        },
+        {
+          "step": 6,
+          "selected": "A",
+          "cost": 600,
+          "actual": 900.0,
+          "headroom": 450.0,
+          "exception": false
+        },
+        {
+          "step": 7,
+          "selected": "A",
+          "cost": 700,
+          "actual": 1050.0,
+          "headroom": 300.0,
+          "exception": false
+        },
+        {
+          "step": 8,
+          "selected": "A",
+          "cost": 800,
+          "actual": 1200.0,
+          "headroom": 150.0,
+          "exception": false
+        },
+        {
+          "step": 9,
+          "selected": "A",
+          "cost": 900,
+          "actual": 1350.0,
+          "headroom": 0.0,
+          "exception": false
+        },
+        {
+          "step": 10,
+          "selected": "A",
+          "cost": 1000,
+          "actual": 1500.0,
+          "headroom": -150.0,
+          "exception": false
+        },
+        {
+          "step": 11,
+          "selected": "A",
+          "cost": 1100,
+          "actual": 1650.0,
+          "headroom": -300.0,
+          "exception": false
+        },
+        {
+          "step": 12,
+          "selected": "A",
+          "cost": 1200,
+          "actual": 1800.0,
+          "headroom": -450.0,
+          "exception": false
+        },
+        {
+          "step": 13,
+          "selected": "A",
+          "cost": 1300,
+          "actual": 1950.0,
+          "headroom": -600.0,
+          "exception": false
+        },
+        {
+          "step": 14,
+          "selected": "A",
+          "cost": 1400,
+          "actual": 2100.0,
+          "headroom": -750.0,
+          "exception": false
+        },
+        {
+          "step": 15,
+          "selected": "A",
+          "cost": 1500,
+          "actual": 2250.0,
+          "headroom": -900.0,
+          "exception": false
+        },
+        {
+          "step": 16,
+          "selected": "A",
+          "cost": 1600,
+          "actual": 2400.0,
+          "headroom": -1050.0,
+          "exception": false
+        },
+        {
+          "step": 17,
+          "selected": "A",
+          "cost": 1700,
+          "actual": 2550.0,
+          "headroom": -1200.0,
+          "exception": false
+        },
+        {
+          "step": 18,
+          "selected": "A",
+          "cost": 1800,
+          "actual": 2700.0,
+          "headroom": -1350.0,
+          "exception": false
+        },
+        {
+          "step": 19,
+          "selected": "A",
+          "cost": 1900,
+          "actual": 2850.0,
+          "headroom": -1500.0,
+          "exception": false
+        },
+        {
+          "step": 20,
+          "selected": "A",
+          "cost": 2000,
+          "actual": 3000.0,
+          "headroom": -1650.0,
+          "exception": false
+        }
+      ]
+    },
+    {
+      "policy": "current",
+      "actual_factor": 1.5,
+      "cost": 2180,
+      "emission": 1740.0,
+      "overrun": 540.0,
+      "fulfilled": 20,
+      "exceptions": 12,
+      "trace": [
+        {
+          "step": 1,
+          "selected": "A",
+          "cost": 100,
+          "actual": 150.0,
+          "headroom": 1200,
+          "exception": false
+        },
+        {
+          "step": 2,
+          "selected": "A",
+          "cost": 200,
+          "actual": 300.0,
+          "headroom": 1050.0,
+          "exception": false
+        },
+        {
+          "step": 3,
+          "selected": "A",
+          "cost": 300,
+          "actual": 450.0,
+          "headroom": 900.0,
+          "exception": false
+        },
+        {
+          "step": 4,
+          "selected": "A",
+          "cost": 400,
+          "actual": 600.0,
+          "headroom": 750.0,
+          "exception": false
+        },
+        {
+          "step": 5,
+          "selected": "A",
+          "cost": 500,
+          "actual": 750.0,
+          "headroom": 600.0,
+          "exception": false
+        },
+        {
+          "step": 6,
+          "selected": "A",
+          "cost": 600,
+          "actual": 900.0,
+          "headroom": 450.0,
+          "exception": false
+        },
+        {
+          "step": 7,
+          "selected": "A",
+          "cost": 700,
+          "actual": 1050.0,
+          "headroom": 300.0,
+          "exception": false
+        },
+        {
+          "step": 8,
+          "selected": "A",
+          "cost": 800,
+          "actual": 1200.0,
+          "headroom": 150.0,
+          "exception": false
+        },
+        {
+          "step": 9,
+          "selected": "C",
+          "cost": 915,
+          "actual": 1245.0,
+          "headroom": 0.0,
+          "exception": true
+        },
+        {
+          "step": 10,
+          "selected": "C",
+          "cost": 1030,
+          "actual": 1290.0,
+          "headroom": -45.0,
+          "exception": true
+        },
+        {
+          "step": 11,
+          "selected": "C",
+          "cost": 1145,
+          "actual": 1335.0,
+          "headroom": -90.0,
+          "exception": true
+        },
+        {
+          "step": 12,
+          "selected": "C",
+          "cost": 1260,
+          "actual": 1380.0,
+          "headroom": -135.0,
+          "exception": true
+        },
+        {
+          "step": 13,
+          "selected": "C",
+          "cost": 1375,
+          "actual": 1425.0,
+          "headroom": -180.0,
+          "exception": true
+        },
+        {
+          "step": 14,
+          "selected": "C",
+          "cost": 1490,
+          "actual": 1470.0,
+          "headroom": -225.0,
+          "exception": true
+        },
+        {
+          "step": 15,
+          "selected": "C",
+          "cost": 1605,
+          "actual": 1515.0,
+          "headroom": -270.0,
+          "exception": true
+        },
+        {
+          "step": 16,
+          "selected": "C",
+          "cost": 1720,
+          "actual": 1560.0,
+          "headroom": -315.0,
+          "exception": true
+        },
+        {
+          "step": 17,
+          "selected": "C",
+          "cost": 1835,
+          "actual": 1605.0,
+          "headroom": -360.0,
+          "exception": true
+        },
+        {
+          "step": 18,
+          "selected": "C",
+          "cost": 1950,
+          "actual": 1650.0,
+          "headroom": -405.0,
+          "exception": true
+        },
+        {
+          "step": 19,
+          "selected": "C",
+          "cost": 2065,
+          "actual": 1695.0,
+          "headroom": -450.0,
+          "exception": true
+        },
+        {
+          "step": 20,
+          "selected": "C",
+          "cost": 2180,
+          "actual": 1740.0,
+          "headroom": -495.0,
+          "exception": true
+        }
+      ]
+    },
+    {
+      "policy": "forecast",
+      "actual_factor": 1.5,
+      "cost": 2251,
+      "emission": 1215.0,
+      "overrun": 15.0,
+      "fulfilled": 20,
+      "exceptions": 0,
+      "trace": [
+        {
+          "step": 1,
+          "selected": "C",
+          "cost": 115,
+          "actual": 45.0,
+          "headroom": 40,
+          "exception": false
+        },
+        {
+          "step": 2,
+          "selected": "C",
+          "cost": 230,
+          "actual": 90.0,
+          "headroom": 55.0,
+          "exception": false
+        },
+        {
+          "step": 3,
+          "selected": "B",
+          "cost": 338,
+          "actual": 180.0,
+          "headroom": 70.0,
+          "exception": false
+        },
+        {
+          "step": 4,
+          "selected": "C",
+          "cost": 453,
+          "actual": 225.0,
+          "headroom": 40.0,
+          "exception": false
+        },
+        {
+          "step": 5,
+          "selected": "C",
+          "cost": 568,
+          "actual": 270.0,
+          "headroom": 55.0,
+          "exception": false
+        },
+        {
+          "step": 6,
+          "selected": "B",
+          "cost": 676,
+          "actual": 360.0,
+          "headroom": 70.0,
+          "exception": false
+        },
+        {
+          "step": 7,
+          "selected": "C",
+          "cost": 791,
+          "actual": 405.0,
+          "headroom": 40.0,
+          "exception": false
+        },
+        {
+          "step": 8,
+          "selected": "C",
+          "cost": 906,
+          "actual": 450.0,
+          "headroom": 55.0,
+          "exception": false
+        },
+        {
+          "step": 9,
+          "selected": "B",
+          "cost": 1014,
+          "actual": 540.0,
+          "headroom": 70.0,
+          "exception": false
+        },
+        {
+          "step": 10,
+          "selected": "C",
+          "cost": 1129,
+          "actual": 585.0,
+          "headroom": 40.0,
+          "exception": false
+        },
+        {
+          "step": 11,
+          "selected": "C",
+          "cost": 1244,
+          "actual": 630.0,
+          "headroom": 55.0,
+          "exception": false
+        },
+        {
+          "step": 12,
+          "selected": "B",
+          "cost": 1352,
+          "actual": 720.0,
+          "headroom": 70.0,
+          "exception": false
+        },
+        {
+          "step": 13,
+          "selected": "C",
+          "cost": 1467,
+          "actual": 765.0,
+          "headroom": 40.0,
+          "exception": false
+        },
+        {
+          "step": 14,
+          "selected": "C",
+          "cost": 1582,
+          "actual": 810.0,
+          "headroom": 55.0,
+          "exception": false
+        },
+        {
+          "step": 15,
+          "selected": "B",
+          "cost": 1690,
+          "actual": 900.0,
+          "headroom": 70.0,
+          "exception": false
+        },
+        {
+          "step": 16,
+          "selected": "C",
+          "cost": 1805,
+          "actual": 945.0,
+          "headroom": 40.0,
+          "exception": false
+        },
+        {
+          "step": 17,
+          "selected": "C",
+          "cost": 1920,
+          "actual": 990.0,
+          "headroom": 55.0,
+          "exception": false
+        },
+        {
+          "step": 18,
+          "selected": "B",
+          "cost": 2028,
+          "actual": 1080.0,
+          "headroom": 70.0,
+          "exception": false
+        },
+        {
+          "step": 19,
+          "selected": "C",
+          "cost": 2143,
+          "actual": 1125.0,
+          "headroom": 40.0,
+          "exception": false
+        },
+        {
+          "step": 20,
+          "selected": "B",
+          "cost": 2251,
+          "actual": 1215.0,
+          "headroom": 75.0,
+          "exception": false
+        }
+      ]
+    }
+  ],
+  "assertions": 683
+}

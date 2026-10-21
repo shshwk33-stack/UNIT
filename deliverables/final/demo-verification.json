@@ -1,0 +1,29 @@
+{
+  "cases": [
+    {
+      "preset": "base",
+      "selected": "B",
+      "status": "adjust"
+    },
+    {
+      "preset": "early",
+      "selected": "C",
+      "status": "adjust"
+    },
+    {
+      "preset": "late",
+      "selected": "A",
+      "status": "normal"
+    },
+    {
+      "preset": "exception",
+      "selected": null,
+      "status": "carbon_exception"
+    }
+  ],
+  "serviceException": true,
+  "invalidInputClearsResult": true,
+  "recovery": true,
+  "mobileNoHorizontalOverflow": true,
+  "consoleErrors": []
+}

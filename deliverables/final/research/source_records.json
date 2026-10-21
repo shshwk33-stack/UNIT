@@ -1,0 +1,319 @@
+{
+  "retrieved": "2026-10-21",
+  "records": [
+    {
+      "DOI": "10.1007/978-981-96-4445-2_21",
+      "title": [
+        "The Location-routing Problem in the Pallet Pooling System Considering Carbon Emissions"
+      ],
+      "author": [
+        {
+          "given": "Xiaoting",
+          "family": "Shang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Bowen",
+          "family": "Miao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Qingguo",
+          "family": "Bai",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "container-title": [
+        "Lecture Notes in Computer Science",
+        "Combinatorial Optimization and Applications"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "253-266"
+    },
+    {
+      "DOI": "10.1016/j.jclepro.2017.10.054",
+      "title": [
+        "Investigating the environmental and economic impact of loading conditions and repositioning strategies for pallet pooling providers"
+      ],
+      "author": [
+        {
+          "given": "Fabiana",
+          "family": "Tornese",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jennifer A.",
+          "family": "Pazour",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Brian K.",
+          "family": "Thorn",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Debjit",
+          "family": "Roy",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andres L.",
+          "family": "Carrano",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            1
+          ]
+        ]
+      },
+      "container-title": [
+        "Journal of Cleaner Production"
+      ],
+      "volume": "172",
+      "issue": null,
+      "page": "155-168"
+    },
+    {
+      "DOI": "10.1016/j.orl.2012.12.003",
+      "title": [
+        "The carbon-constrained EOQ"
+      ],
+      "author": [
+        {
+          "given": "Xi",
+          "family": "Chen",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Saif",
+          "family": "Benjaafar",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Adel",
+          "family": "Elomri",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2013,
+            3
+          ]
+        ]
+      },
+      "container-title": [
+        "Operations Research Letters"
+      ],
+      "volume": "41",
+      "issue": "2",
+      "page": "172-179"
+    },
+    {
+      "DOI": "10.3390/su132212747",
+      "title": [
+        "Management and Logistics of Returnable Transport Items: A Review Analysis on the Pallet Supply Chain"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-1309-0928",
+          "authenticated-orcid": false,
+          "given": "Fabiana",
+          "family": "Tornese",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Innovation Engineering, University of Salento, 73100 Lecce, Italy"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7930-0556",
+          "authenticated-orcid": false,
+          "given": "Maria Grazia",
+          "family": "Gnoni",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Innovation Engineering, University of Salento, 73100 Lecce, Italy"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Brian K.",
+          "family": "Thorn",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Industrial and Systems Engineering, Rochester Institute of Technology, Rochester, NY 14623, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0081-1973",
+          "authenticated-orcid": false,
+          "given": "Andres L.",
+          "family": "Carrano",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Mechanical Engineering, Fairfield University, Fairfield, CT 06824, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0463-8744",
+          "authenticated-orcid": false,
+          "given": "Jennifer A.",
+          "family": "Pazour",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Industrial and Systems Engineering, Rensselaer Polytechnic Institute, Troy, NY 12180, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            11,
+            18
+          ]
+        ]
+      },
+      "container-title": [
+        "Sustainability"
+      ],
+      "volume": "13",
+      "issue": "22",
+      "page": "12747"
+    }
+  ],
+  "scope": {
+    "R1": "ISO official abstract and publication details",
+    "R2": "Crossref metadata and registered abstract reviewed",
+    "R3-R5": "Metadata and titles only; full texts not reviewed"
+  }
+}

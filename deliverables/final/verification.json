@@ -1,0 +1,139 @@
+{
+  "model_assertions": 683,
+  "pdf": {
+    "report": {
+      "pages": 27,
+      "embedded_font_records": 172,
+      "text_within_page": true,
+      "no_replacement_characters": true
+    },
+    "main": {
+      "pages": 5,
+      "embedded_font_records": 39,
+      "text_within_page": true,
+      "no_replacement_characters": true
+    },
+    "banner": {
+      "pages": 4,
+      "embedded_font_records": 34,
+      "text_within_page": true,
+      "no_replacement_characters": true
+    },
+    "appendix": {
+      "pages": 8,
+      "embedded_font_records": 30,
+      "text_within_page": true,
+      "no_replacement_characters": true
+    },
+    "full": {
+      "pages": 13,
+      "embedded_font_records": 50,
+      "text_within_page": true,
+      "no_replacement_characters": true
+    }
+  },
+  "exact_excerpts": {
+    "banner_equals_main_2_to_5": true,
+    "full_equals_main_plus_appendix": true
+  },
+  "independent_replay": [
+    {
+      "policy": "cost",
+      "factor": 1.0,
+      "emission": 2000.0,
+      "cost": 2000,
+      "matched": true
+    },
+    {
+      "policy": "current",
+      "factor": 1.0,
+      "emission": 1440.0,
+      "cost": 2120,
+      "matched": true
+    },
+    {
+      "policy": "forecast",
+      "factor": 1.0,
+      "emission": 1170.0,
+      "cost": 2167,
+      "matched": true
+    },
+    {
+      "policy": "cost",
+      "factor": 1.25,
+      "emission": 2500.0,
+      "cost": 2000,
+      "matched": true
+    },
+    {
+      "policy": "current",
+      "factor": 1.25,
+      "emission": 1575.0,
+      "cost": 2158,
+      "matched": true
+    },
+    {
+      "policy": "forecast",
+      "factor": 1.25,
+      "emission": 1200.0,
+      "cost": 2216,
+      "matched": true
+    },
+    {
+      "policy": "cost",
+      "factor": 1.5,
+      "emission": 3000.0,
+      "cost": 2000,
+      "matched": true
+    },
+    {
+      "policy": "current",
+      "factor": 1.5,
+      "emission": 1740.0,
+      "cost": 2180,
+      "matched": true
+    },
+    {
+      "policy": "forecast",
+      "factor": 1.5,
+      "emission": 1215.0,
+      "cost": 2251,
+      "matched": true
+    }
+  ],
+  "report_links": {
+    "contents": 25,
+    "references": 5
+  },
+  "report_dom_overflow": false,
+  "demo": {
+    "cases": [
+      {
+        "preset": "base",
+        "selected": "B",
+        "status": "adjust"
+      },
+      {
+        "preset": "early",
+        "selected": "C",
+        "status": "adjust"
+      },
+      {
+        "preset": "late",
+        "selected": "A",
+        "status": "normal"
+      },
+      {
+        "preset": "exception",
+        "selected": null,
+        "status": "carbon_exception"
+      }
+    ],
+    "serviceException": true,
+    "invalidInputClearsResult": true,
+    "recovery": true,
+    "mobileNoHorizontalOverflow": true,
+    "consoleErrors": []
+  },
+  "visual_review": "27 report pages and 13 slides reviewed as rendered contact sheets; detailed checks on edited chart and budget slides."
+}
